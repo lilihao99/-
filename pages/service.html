@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>双创服务</title>
+    <link rel="stylesheet" href="../css/service.css">
+    <link rel="stylesheet" href="../css/register.css">
+    <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="./css/font-awesome-4.7.0/css/font-awesome.css">
+    <script>
+        function showSubnav(e) {
+            // 通过"标签"获取HTML元素
+            var subNav = e.getElementsByTagName("ul")[0];
+            subNav.style.display = "block";
+        }
+
+        function hideSubnav(e) {
+            var subNav = e.getElementsByTagName("ul")[0];
+            subNav.style.display = "none";
+        }
+    </script>
+</head>
+
+<body>
+    <!-- 登录框 开始-->
+    <div id="login">
+        <div><button id="gb-btn">关闭</button></div>
+        <div>账号：<input type="text" name="" id="" placeholder="请输入账号"></div>
+        <div>密码：<input type="text" name="" id="" placeholder="请输入密码"></div>
+        <div> <button>登录</button> </div>
+    </div>
+    <!-- 登录框 结束-->
+
+    <!-- 注册框 开始-->
+    <div id="register">
+        <div><button id="gb1-btn">关闭</button></div>
+        <div>账号：<input type="text" name="" id="" placeholder="请输入账号"></div>
+        <div>密码：<input type="text" name="" id="" placeholder="请输入密码"></div>
+        <div> <button>注册</button> </div>
+    </div>
+    <!-- 注册框 结束-->
+    <!------------ 头部 开始 ------------>
+    <div class="header">
+        <div class="header-wrapper">
+            <div class="header-logo">
+                <img src="../image/header-logo.png" alt="">
+            </div>
+            <div class="header-nav">
+                <ul>
+                    <li>
+                        <a href="../index.html" class="a-white">首页</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li onmouseover="showSubnav(this)" onmouseout="hideSubnav(this)">
+                        <a class="a-white" href="./about.html">关于我们</a>
+                        <ul>
+                            <li><a href="./about.html#jdgk-maodian">基地概况</a></li>
+                            <li><a href="./about.html#hjzs-maodian">环境展示</a></li>
+                            <li><a href="./about.html#yhsy-maodian">一核四园</a></li>
+                            <li><a href="./about.html#fwpt-maodian">服务平台</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <ul>
+                    <li onmouseover="showSubnav(this)" onmouseout="hideSubnav(this)">
+                        <a class="a-white" href="./service.html">双创服务</a>
+                        <ul>
+                            <li><a href="./service.html#cdfw-maodian">场地服务</a></li>
+                            <li><a href="./service.html#sbfw-maodian">申报服务</a></li>
+                            <li><a href="./service.html#jsfw-maodian">技术服务</a></li>
+                            <li><a href="./service.html#fhfw-maodian">孵化服务</a></li>
+                            <li><a href="./service.html#rcfw-maodian">人才服务</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <ul>
+                    <li onmouseover="showSubnav(this)" onmouseout="hideSubnav(this)">
+                        <a class="a-white" href="./policy.html">政策服务</a>
+                        <ul>
+                            <li><a href="./policy.html#fgzc-maodian">非公职称</a></li>
+                            <!-- <li><a href="#">申报</a></li> -->
+
+                        </ul>
+                    </li>
+                </ul>
+
+                <ul>
+                    <li onmouseover="showSubnav(this)" onmouseout="hideSubnav(this)">
+                        <a class="a-white" href="./news.html">资讯发布</a>
+                        <ul>
+                            <li><a href="./news.html#jdzx-maodian">基地资讯</a></li>
+                            <li><a href="./news.html#hdxw-maodian">活动新闻</a></li>
+                            <li><a href="./news.html#gsgg-maodian">公示公告</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+            </div>
+            <!-- header-nav-r-->
+            <div class="header-nav-r">
+                <!-- header-search -->
+                <div class="header-search">
+                    <input type="text" placeholder="&nbsp;&nbsp;全站搜索">
+                    <i class="fa fa-search"></i>
+                </div>
+                <!-- header-btn -->
+                <div class="header-btn">
+                    <a href="#" id="login-btn">登录</a>
+                    <a href="#" id="register-btn">注册</a>
+                </div>
+            </div>
+            <!-- header-language -->
+            <div class="language">
+                <a href="#" class="">简体中文</a>
+                <i class="fa fa-sort-desc"></i>
+            </div>
+        </div>
+    </div>
+    <!------------ 头部 结束 ------------>
+
+    <!-- 双创服务 主体开始 -->
+    <div class="main">
+        <!-- 场地服务 开始 -->
+        <a id="cdfw-maodian"></a>
+        <div class="cdfw">
+            <div class="cdfw-wrap clfix">
+                <div class="wrapper">
+                    <!-- 左 -->
+                    <div class="left">
+                        <div class="left-border"></div>
+                        <div class="left-img">
+                            <img src="../image/service-changdi.jpg" alt="">
+                        </div>
+                    </div>
+                    <!-- 右 -->
+                    <div class="right">
+                        <div class="right-text1">
+                            <p>S</p>
+                        </div>
+                        <div class="right-text2">
+                            <p style="color: white;"> 场地服务</p>
+                            <div>———</div>
+                            <span style="color: white;">Site service</span>
+                        </div>
+                        <div class="right-text3" style="color: white;">
+                            基地引入联合办公模式，创造更开放、更自由、更舒适的办公空间，提高沟通和交流效率，更好地分享信息和机会；基地倡导自由的办公方式，构筑工作、生活、娱乐、休闲、消费为一体的生活圈，形成时间自由、生活便利、工作舒适的SOHO模式。
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a id="sbfw-maodian"></a>
+        </div>
+        <!-- 场地服务 结束 -->
+
+        <!-- 申报服务 开始 -->
+
+        <div class="sbfw">
+            <div class="sbfw-wrap clfix">
+                <div class="wrapper2">
+                    <!-- 右 -->
+                    <div class="right">
+                        <div class="right-text1">
+                            <p>D</p>
+                        </div>
+                        <div class="right-text2">
+                            <p>申报服务</p>
+                            <div>———</div>
+                            <span>Declaration service</span>
+                        </div>
+                        <div class="right-text3">
+                            “与客户一起成长”是基地的使命。基地在充分调研的基础上提出具有针对性、独具特色和可操作的解决方案，并通过项目咨询、人员培训、方案实施规划、实施过程辅导等多种方式深入周到的协助客户实施项目。
+                        </div>
+                    </div>
+                    <!-- 左 -->
+                    <div class="left">
+                        <div class="left-border"></div>
+                        <div class="left-img">
+                            <img src="../image/service-shenchuang.jpg" alt="">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- 申报服务 结束 -->
+
+        <!-- 技术服务 开始 -->
+        <a id="jsfw-maodian"></a>
+        <div class="jsfw">
+            <div class="jsfw-wrap clfix">
+                <div class="wrapper3">
+                    <!-- 左 -->
+                    <div class="left">
+                        <div class="left-border"></div>
+                        <div class="left-img">
+                            <img src="../image/service-jishu.png" alt="">
+                        </div>
+                    </div>
+                    <!-- 右 -->
+                    <div class="right">
+                        <div class="right-text1">
+                            <p>S</p>
+                        </div>
+                        <div class="right-text2">
+                            <p>技术服务</p>
+                            <div>———</div>
+                            <span>Technical service</span>
+                        </div>
+                        <div class="right-text3">
+                            基地通过搭建共性技术平台、提供大型科研设备的共享，促进产学研合作，链接高校技术、专家技术，促进企业与高校产学研合作；此外，基地也通过搭建技术信息平台，实现科技文献、科技数据、科技信息的共享。
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <a id="fhfw-maodian"></a>
+        </div>
+        <!-- 技术服务 结束 -->
+
+        <!-- 孵化服务 开始 -->
+
+        <div class="fhfw">
+            <div class="fhfw-wrap clfix">
+                <div class="wrapper2">
+                    <!-- 右 -->
+                    <div class="right">
+                        <div class="right-text1">
+                            <p>I</p>
+                        </div>
+                        <div class="right-text2">
+                            <p>孵化服务</p>
+                            <div>———</div>
+                            <span>Incubation service</span>
+                        </div>
+                        <div class="right-text3">
+                            基地提供一站式孵化服务体系，整合社会资源，共同帮助在孵企业解决问题。同时，基地聚焦市场优势，协助孵化企业建立组织构架、激励机制、人才机制、考核机制等，让孵化载体服务进入良性循环
+                        </div>
+                    </div>
+                    <!-- 左 -->
+                    <div class="left">
+                        <div class="left-border"></div>
+                        <div class="left-img">
+                            <img src="../image/service-fuhua.jpg" alt="">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- 孵化服务 结束 -->
+
+        <!-- 人才服务 开始 -->
+        <a id="rcfw-maodian"></a>
+        <div class="rcfw">
+            <div class="rcfw-wrap clfix">
+                <div class="wrapper3">
+                    <!-- 左 -->
+                    <div class="left">
+                        <div class="left-border"></div>
+                        <div class="left-img">
+                            <img src="../image/service-rencai.jpg" alt="">
+                        </div>
+                    </div>
+                    <!-- 右 -->
+                    <div class="right">
+                        <div class="right-text1">
+                            <p>T</p>
+                        </div>
+                        <div class="right-text2">
+                            <p>人才服务</p>
+                            <div>———</div>
+                            <span>Talent service</span>
+                        </div>
+                        <div class="right-text3">
+                            基地提供一站式双创人才服务，通过建立大规模的双创人才数据库，结合企业实际经营情况提供有价值的人力资源服务。除人力资源服务外，还可为孵化器内企业提供档案托管、户口托管及落户等相关服务。
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 人才服务 结束 -->
+    </div>
+    <!-- 双创服务 主体结束 -->
+
+
+    <!--------------------- footer begin ------------------------->
+    <div class="footer clfix">
+        <div class="footer-wrap ">
+
+            <div class="f-img">
+                <img src="../image/footer-logo.png" alt="">
+            </div>
+
+            <div class="f-text">
+                <p>天津（滨海）海外人才离岸创新创业基地</p>
+                <p>固话：+86-22-25231239 +86-22-25230519</p>
+                <p>地址：天津滨海-中关村科技园华塘睿城一区3号楼写字楼</p>
+            </div>
+
+            <div class="f-list-wrap">
+                <div class="f-list">
+                    <ul>
+                        <li><a href="./about.html">关于我们</a></li>
+                        <li><a href="./about.html#jdgk-maodian">基地概况</a></li>
+                        <li><a href="./about.html#hjzs-maodian">环境展示</a></li>
+                        <li><a href="./about.html#yhsy-maodian">一核四园</a></li>
+                        <li><a href="./about.html#fwpt-maodian">服务平台</a></li>
+                    </ul>
+                </div>
+                <div class="f-list">
+                    <ul>
+                        <li><a href="./service.html">双创服务</a></li>
+                        <li><a href="#cdfw-maodian">场地服务</a></li>
+                        <li><a href="#sbfw-maodian">申报服务</a></li>
+                        <li><a href="#jsfw-maodian">技术服务</a></li>
+                        <li><a href="#fhfw-maodian">孵化服务</a></li>
+                        <li><a href="#rcfw-maodian">人才服务</a></li>
+                    </ul>
+                </div>
+                <div class="f-list">
+                    <ul>
+                        <li><a href="./policy.html">政策服务</a></li>
+                        <li><a href="./policy.html#fgzc-maodian">非公职称</a></li>
+                        <li><a href="#">申报</a></li>
+
+                    </ul>
+                </div>
+                <div class="f-list">
+                    <ul>
+                        <li><a href="./news.html">咨询发布</a></li>
+                        <li><a href="./news.html#jdzx-maodian">基地资讯</a></li>
+                        <li><a href="./news.html#hdxw-maodian">活动新闻</a></li>
+                        <li><a href="./news.html#gsgg-maodian">公示公告</a></li>
+                    </ul>
+                </div>
+
+
+            </div>
+
+            <div class="f-img2-wrap">
+                <div class="f-img2">
+                    <img src="../image/footer1.png" alt="">
+                    <span>微博公众号</span>
+                </div>
+                <div class="f-img2">
+                    <img src="../image/footer2.jpg" alt="">
+                    <span>微信公众号</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <span>2021.6.1&nbsp;&nbsp;Lilihao</span>
+    </div>
+    <!--------------------- footer end --------------------------->
+    <script src="../js/login.js"></script>
+    <script src="../js/register.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,699 @@
+/********** 清除浏览器盒子模型的默认样式 ***********/
+* {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+/********** 双伪类清除浮动 ***********/
+.clfix::after,
+.clfix::before {
+    content: "";
+    display: table;
+}
+
+.clfix::after {
+    clear: both;
+}
+
+/*************** header begin ***************/
+.header {
+    width: 100%;
+    height: 60px;
+    background: rgba(29, 115, 185, .9);
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+}
+
+.header-wrapper {
+    width: 1200px;
+    height: 60px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.header-logo {
+    width: 140px;
+    height: 60px;
+    float: left;
+    border: 2px solid white;
+    border-top: none;
+    text-align: center;
+    background-color: #BAE3F9;
+}
+
+.header-logo img {
+    width: 121.33px;
+    height: 52px;
+    margin: 4px 0;
+}
+
+.header-nav {
+    display: flex;
+    justify-content: space-between;
+    width: 640px;
+    height: 60px;
+    float: left;
+    margin-left: 70px;
+}
+
+.header-nav a {
+    display: inline-block;
+    width: 110px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    margin-top: 10px;
+
+
+}
+
+li a:hover {
+    color: rgb(29, 115, 185);
+    background-color: white;
+}
+
+
+
+/* JavaScript  begin*/
+
+/* 下拉列表颜色 */
+ul li ul {
+    display: none;
+    background-color: rgba(187, 180, 180, .9);
+}
+
+ul li ul li {
+    float: none;
+}
+
+ul li ul li a {
+    color: black;
+
+}
+
+/* 下拉列表选中颜色 */
+ul li ul li a:hover {
+    background: rgba(29, 115, 185, .9);
+    color: white;
+}
+
+.a-white {
+    color: white;
+}
+
+/* JavaScript  end*/
+
+
+.header-nav-r {
+    width: 300px;
+    height: 60px;
+    float: right;
+    margin-top: 10px;
+}
+
+.header-search {
+    width: 200px;
+    height: 30px;
+    border-radius: 6px;
+    border: 1px solid transparent;
+
+    float: left;
+    margin-top: 5px;
+    padding-top: 3px;
+    background-color: white;
+
+}
+
+.header-search input {
+    font-size: 12px;
+    width: 170px;
+    outline: none;
+    height: 25px;
+    border-style: none;
+}
+
+.header-search i {
+    color: #ACACAC;
+}
+
+.header-btn {
+    display: inline-block;
+    width: 82px;
+    height: 25px;
+    margin-top: 10px;
+    margin-left: 15px;
+}
+
+.header-btn a:nth-of-type(1)::after {
+    content: " /";
+}
+
+.header-btn a {
+    color: white;
+    font-size: 16px;
+}
+
+.language {
+    width: 140px;
+    height: 47px;
+    text-align: center;
+    line-height: 47px;
+    background: rgba(29, 115, 185, .9);
+    position: absolute;
+    top: 60px;
+    left: 2px;
+
+}
+
+.language a {
+    font-size: 16px;
+    color: white;
+}
+
+.language i {
+    color: white;
+
+}
+
+/*************** header end ***************/
+
+/* banner begin */
+#banner {
+    width: 100%;
+    height: 436px;
+}
+
+#banner img {
+    width: 100%;
+}
+
+/* banner end */
+
+/* main begin */
+/* section1 begin */
+.content1 {
+    height: 635px;
+    background-color: white;
+}
+
+.content1-wrap {
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.c-title-en {
+    width: 100%;
+    height: 71px;
+    text-align: center;
+    margin-top: 55px;
+}
+
+.c-title-en span {
+    word-spacing: 20px;
+    color: orange;
+    font-weight: 700;
+    font-size: 55px;
+    font-family: Arial;
+    padding-bottom: 7px;
+}
+
+.c-title-ch {
+    width: 100%;
+    height: 52px;
+    text-align: center;
+
+}
+
+.c-title-ch span {
+    font-size: 40px;
+    font-family: Microsoft YaHei;
+    color: #979797;
+}
+
+.base-Survey-left {
+    width: 470px;
+    height: 400px;
+    margin-top: 50px;
+    float: left;
+}
+
+.base-Survey-left h1 {
+    font-size: 24px;
+    margin-top: 58px;
+    width: 447px;
+    text-align-last: justify;
+    text-align: justify;
+
+}
+
+.base-Survey-left h3 {
+    font-size: 16px;
+    font-family: 微软雅黑;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    line-height: 30px;
+}
+
+.base-Survey-left p {
+    font-size: 19px;
+    margin-top: 24px;
+    line-height: 30px;
+    width: 447px;
+    text-align: justify;
+}
+
+.base_Survey_right {
+    margin-top: 40px;
+    width: 649px;
+    height: 351px;
+    display: flex;
+    margin-left: 56px;
+    justify-content: space-between;
+    float: left;
+}
+
+/* section1 end */
+
+/* section2 begin */
+.section2 {
+    width: 100%;
+    height: 780px;
+    background-color: #1D71B7;
+}
+
+.section2-wrap {
+    width: 1200px;
+    height: 780px;
+    margin: 0 auto;
+}
+
+.section2-wrap p {
+    letter-spacing: .21px;
+    font-size: 16px;
+    width: 960px;
+    margin: 0 auto;
+    margin-top: 40px;
+    letter-spacing: 1px;
+    line-height: 26px;
+    color: #fff;
+    text-align: center;
+
+}
+
+.environmentShow {
+    width: 1000px;
+    min-width: 900px;
+    margin: 0 auto;
+    padding-bottom: 50px;
+    cursor: pointer;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    margin-top: 40px;
+    position: relative;
+}
+
+.environmentShow1 {
+    width: 50%;
+    position: relative;
+}
+
+.environmentShow1 img {
+    width: 500px;
+    height: 209px;
+}
+
+.mohu {
+    width: 500px;
+    height: 209px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: #1D71B7;
+    opacity: 0.8;
+}
+
+.environmentShowBox {
+    width: 219px;
+    height: 89px;
+    text-align: center;
+    margin-top: 59px;
+    margin-left: 140px;
+    position: absolute;
+    z-index: 99;
+}
+
+.environmentShowBox h3 {
+    color: #fff;
+    margin: 5px 0 0 0;
+    font-weight: 700;
+    font-size: 16px;
+    padding-top: 17px;
+    text-align: center;
+}
+
+.environmentShowBox h4 {
+    color: #fff;
+    margin: 0;
+    font-weight: 700;
+    font-size: 16px;
+    padding-top: 8px;
+    text-align: center;
+}
+
+.environmentShow1:hover .environmentShowBox {
+    background: rgba(255, 255, 255, .8);
+}
+
+.environmentShow1:hover h3 {
+    color: orange;
+}
+
+.environmentShow1:hover h4 {
+    color: orange;
+}
+
+.environmentShow1:hover .mohu {
+    display: none;
+}
+
+/* 一核四园 开始 */
+.section3 {
+    width: 100%;
+    height: 830px;
+}
+
+.section3-wrap {
+    width: 1200px;
+    height: 830px;
+    margin: 0 auto;
+    background-color: #FFFFFF;
+}
+
+.section3-wrap p {
+    letter-spacing: .21px;
+    font-size: 16px;
+    width: 960px;
+    margin: 0 auto;
+    margin-top: 40px;
+    letter-spacing: 1px;
+    line-height: 26px;
+    color: #333;
+    text-align: center;
+
+}
+
+.s3-img-wrap {
+    width: 100%;
+    height: 500px;
+    margin-top: 30px;
+}
+
+.s3-i-item1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 350px;
+    height: 500px;
+    float: left;
+
+}
+
+.s3-i-i-top {
+    width: 349px;
+    height: 209px;
+    perspective: 800px;
+}
+
+
+.wrapper {
+    width: 349px;
+    height: 209px;
+    perspective: 800px;
+    position: relative;
+
+}
+
+.item {
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 1s;
+    transform: rotateX(-180deg);
+
+}
+
+.wrapper:hover .item {
+    transform: rotateX(0deg);
+}
+
+.img-wrapper {
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 1s;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    backface-visibility: hidden;
+}
+
+.wrapper:hover .img-wrapper {
+    transform: rotateX(180deg);
+}
+
+.img-wrapper span {
+    text-align: center;
+    font-size: 20px;
+    color: white;
+    position: absolute;
+    left: 40px;
+    top: 15px;
+}
+
+.img-wrapper img:nth-last-child(1) {
+    width: 316px;
+    height: 136px;
+    position: absolute;
+    left: 20px;
+    bottom: 15px;
+}
+
+.item span {
+    text-align: center;
+    font-size: 20px;
+    color: white;
+    position: absolute;
+    left: 40px;
+    top: 15px;
+}
+
+.item p {
+    color: white;
+    font-size: 15px;
+    width: 305px;
+    position: absolute;
+    left: 30px;
+    top: 15px;
+    text-align: left;
+    text-indent: 2em;
+
+}
+
+.s3-i-item2 {
+    width: 500px;
+    height: 470px;
+    float: left;
+    margin-top: 50px;
+    margin-left: -20px;
+}
+
+
+/* 一核四园 结束 */
+
+/* 服务平台 开始 */
+.section4 {
+    width: 100%;
+    height: 552px;
+    position: relative;
+    margin-top: 50px;
+    background-color: cadetblue;
+}
+
+.section4 img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.section4-wrap {
+    width: 1200px;
+    height: 552px;
+    margin: 0 auto;
+    position: absolute;
+    left: 350px;
+    top: 0;
+}
+
+.section4-wrap p {
+    letter-spacing: .21px;
+    font-size: 16px;
+    width: 960px;
+    margin: 0 auto;
+    margin-top: 40px;
+    letter-spacing: 1px;
+    line-height: 26px;
+    color: #333;
+    text-align: center;
+
+}
+
+.s4-img-wrap {
+    display: flex;
+    justify-content: space-between;
+    width: 1200px;
+    height: 150px;
+    margin-top: 60px;
+}
+
+.s4-i-item {
+    width: 300px;
+    height: 150px;
+    text-align: center;
+    
+}
+.s4-i-iwrap {
+    width: 300px;
+    height: 80px;
+    text-align: center;
+}
+.s4-i-iwrap i{
+    color: white;
+}
+.s4-i-item:hover i{
+    color: orange;
+}
+.s4-i-item:hover span{
+    color: orange;
+}
+.s4-i-swrap {
+    width: 300px;
+    margin-top: 20px;
+    text-align: center;
+}
+.s4-i-swrap span {
+    font-weight: 700;
+    color: #fff;
+    font-size: 22px;
+}
+
+
+/* 服务平台 结束 */
+/* main end */
+
+
+/*************** footer begin **********/
+.footer {
+    width: 100%;
+    height: 210px;
+    background-color: #347FBE;
+}
+
+.footer-wrap {
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.f-img {
+    width: 140px;
+    height: 60px;
+    position: absolute;
+    left: 0px;
+    top: 10px;
+}
+
+.f-text {
+    width: 330px;
+    position: absolute;
+    left: 0;
+    top: 70px;
+}
+
+.f-text p {
+    margin-bottom: 5px;
+    font-size: 16px;
+    color: white;
+}
+
+.f-list-wrap {
+    display: flex;
+    justify-content: space-between;
+    width: 380px;
+    margin-left: 470px;
+}
+
+.f-list {
+    width: 95px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.f-list a {
+    display: inline-block;
+    width: 75px;
+    height: 29px;
+    margin-top: 2px;
+    color: white;
+}
+.f-list a:hover{
+    background-color: transparent;
+    color: white;
+}
+
+.f-img2-wrap {
+    display: flex;
+    justify-content: space-between;
+    width: 250px;
+    height: 150px;
+    position: absolute;
+    top: 30px;
+    right: 0;
+}
+
+.f-img2 {
+    width: 110px;
+    height: 125px;
+    text-align: center;
+}
+
+.f-img2 img {
+    width: 110px;
+}
+
+.f-img2 span {
+    font-size: 14px;
+    color: white;
+}
+
+.copyright {
+    width: 100%;
+    height: 40px;
+    background-color: #7297BA;
+    text-align: center;
+    line-height: 40px;
+}
+
+.copyright span {
+    color: white;
+}
+
+/*************** footer end*************/

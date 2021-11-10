@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>关于我们</title>
+    <link rel="stylesheet" href="../css/about.css">
+    <link rel="stylesheet" href="../css/register.css">
+    <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="../css/font-awesome-4.7.0/css/font-awesome.css">
+    <script>
+        function showSubnav(e) {
+            // 通过"标签"获取HTML元素
+            var subNav = e.getElementsByTagName("ul")[0];
+            subNav.style.display = "block";
+        }
+
+        function hideSubnav(e) {
+            var subNav = e.getElementsByTagName("ul")[0];
+            subNav.style.display = "none";
+        }
+    </script>
+</head>
+
+<body>
+    <!-- 登录框 开始-->
+    <div id="login">
+        <div><button id="gb-btn">关闭</button></div>
+        <div>账号：<input type="text" name="" id="" placeholder="请输入账号"></div>
+        <div>密码：<input type="text" name="" id="" placeholder="请输入密码"></div>
+        <div> <button>登录</button> </div>
+    </div>
+    <!-- 登录框 结束-->
+
+    <!-- 注册框 开始-->
+    <div id="register">
+        <div><button id="gb1-btn">关闭</button></div>
+        <div>账号：<input type="text" name="" id="" placeholder="请输入账号"></div>
+        <div>密码：<input type="text" name="" id="" placeholder="请输入密码"></div>
+        <div> <button>注册</button> </div>
+    </div>
+    <!-- 注册框 结束-->
+    <!------------ 头部 开始 ------------>
+    <div class="header">
+        <div class="header-wrapper">
+            <div class="header-logo">
+                <img src="../image/header-logo.png" alt="">
+            </div>
+            <div class="header-nav">
+                <ul>
+                    <li>
+                        <a href="../index.html" class="a-white">首页</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li onmouseover="showSubnav(this)" onmouseout="hideSubnav(this)">
+                        <a class="a-white" href="./about.html">关于我们</a>
+                        <ul>
+                            <li><a href="#jdgk-maodian">基地概况</a></li>
+                            <li><a href="#hjzs-maodian">环境展示</a></li>
+                            <li><a href="#yhsy-maodian">一核四园</a></li>
+                            <li><a href="#fwpt-maodian">服务平台</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <ul>
+                    <li onmouseover="showSubnav(this)" onmouseout="hideSubnav(this)">
+                        <a class="a-white" href="./service.html">双创服务</a>
+                        <ul>
+                            <li><a href="./service.html#cdfu-maodian">场地服务</a></li>
+                            <li><a href="./service.html#sbfu-maodian">申报服务</a></li>
+                            <li><a href="./service.html#jsfu-maodian">技术服务</a></li>
+                            <li><a href="./service.html#fhfu-maodian">孵化服务</a></li>
+                            <li><a href="./service.html#rcfu-maodian">人才服务</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <ul>
+                    <li onmouseover="showSubnav(this)" onmouseout="hideSubnav(this)">
+                        <a class="a-white" href="./policy.html">政策服务</a>
+                        <ul>
+                            <li><a href="./policy.html#fgzc-maodian">非公职称</a></li>
+                            <li><a href="#">申报</a></li>
+
+                        </ul>
+                    </li>
+                </ul>
+
+                <ul>
+                    <li onmouseover="showSubnav(this)" onmouseout="hideSubnav(this)">
+                        <a class="a-white" href="./news.html">资讯发布</a>
+                        <ul>
+                            <li><a href="./news.html#jdzx-maodian">基地资讯</a></li>
+                            <li><a href="./news.html#jdzx-maodian">活动新闻</a></li>
+                            <li><a href="./news.html#jdzx-maodian">公示公告</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+            </div>
+            <!-- header-nav-r-->
+            <div class="header-nav-r">
+                <!-- header-search -->
+                <div class="header-search">
+                    <input type="text" placeholder="&nbsp;&nbsp;全站搜索">
+                    <i class="fa fa-search"></i>
+                </div>
+                <!-- header-btn -->
+                <div class="header-btn">
+                    <a href="#" id="login-btn">登录</a>
+                    <a href="#" id="register-btn">注册</a>
+                </div>
+            </div>
+            <!-- header-language -->
+            <div class="language">
+                <a href="#" class="">简体中文</a>
+                <i class="fa fa-sort-desc"></i>
+            </div>
+        </div>
+    </div>
+    <!------------ 头部 结束 ------------>
+
+
+    <!------------ 广告图 开始 ------------>
+    <div id="banner">
+        <img src="../image/about-banner-img.jpg" alt="">
+    </div>
+    <!------------ 广告图 结束------------>
+
+    <!------------ 主体 开始 ------------>
+    <!-- 基地概况 开始 -->
+    <a id="jdgk-maodian"></a>
+    <div class="content1">
+        <div class="content1-wrap clfix">
+            <!-- content-title -->
+            <div class="c-title-en">
+                <span>BASE OVERVIEW</span>
+            </div>
+            <div class="c-title-ch">
+                <span>基地概况</span>
+            </div>
+            <div class="base-Survey-left">
+                <div>
+                    <h1>天津（滨海）海外人才离岸创新创业基地</h1>
+                    <h3>TIANJIN(BINHAI)OFFSHORE ENTREPRENEURAIL BASE FOR OVERSEAS PROFESSIONALS</h3>
+                </div>
+                <hr>
+                <p>基地是天津市面向海外引才引智的重要工作平台，是国内具有重要影响力的海外高层次人才聚集区、创新成果孵化推广区、体制机制改革先行区、运行模式创新示范区。</p>
+            </div>
+            <div class="base_Survey_right">
+                <img src="../image/about1.jpg" alt="">
+                <img src="../image/about2.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    <!-- 基地概况 结束 -->
+
+
+    <!-- 环境展示 开始-->
+    <a id="hjzs-maodian"></a>
+    <div class="section2">
+        <div class="section2-wrap clfix">
+            <div class=" c-title-en">
+                <span>ENVIRONMENTAL SHOWCASE</span>
+            </div>
+            <div class="c-title-ch">
+                <span>环境展示</span>
+            </div>
+            <p>基地毗邻森林公园和北塘水库，湿地环绕，环境优美，生态宜居； Z2 、 Z4
+                两条轨道线路专设站点，交通发达；周边配备泰达医院、北塘文体中心等设施，生活便利。秉持“先生活、后生产、再生态”的服务理念，基地致力于为海外人才打造宜商宜业宜居的双创工作环境。</p>
+            <div class="environmentShow">
+
+                <div class="environmentShow1">
+                    <div class="environmentShowBox">
+                        <h3 class="p-t-10">
+                            森林公园
+                        </h3>
+                        <h4 class="">
+                            Forest Park
+                        </h4>
+                    </div>
+                    <img src="../image/about3.jpg">
+                    <div class="mohu"></div>
+                </div>
+
+                <div class="environmentShow1">
+                    <div class="environmentShowBox">
+                        <h3 class="p-t-10">
+                            北塘水库
+                        </h3>
+                        <h4 class="">
+                            Beitang Reservoir
+                        </h4>
+                    </div>
+                    <img src="../image/about4.jpg">
+                    <div class="mohu"></div>
+                </div>
+
+                <div class="environmentShow1">
+                    <div class="environmentShowBox">
+                        <h3 class="p-t-10">
+                            湿地环境
+                        </h3>
+                        <h4 class="">
+                            Wetland Environment
+                        </h4>
+                    </div>
+                    <img src="../image/about5.jpg">
+                    <div class="mohu"></div>
+                </div>
+
+                <div class="environmentShow1">
+                    <div class="environmentShowBox">
+                        <h3 class="p-t-10">
+                            生态宜居
+                        </h3>
+                        <h4 class="">
+                            Ecological Livability
+                        </h4>
+                    </div>
+                    <img src="../image/about6.jpg">
+                    <div class="mohu"></div>
+                </div>
+
+            </div>
+        </div>
+
+
+    </div>
+    <!-- 环境展示 结束 -->
+
+    <!-- 一核四园 开始 -->
+    <a id="yhsy-maodian"></a>
+    <div class="section3">
+        <div class="section3-wrap clfix">
+            <div class=" c-title-en">
+                <span>ONE CORE & FOUR PARK</span>
+            </div>
+            <div class="c-title-ch">
+                <span>一核四园</span>
+            </div>
+            <p>
+                基地采用“一核四园多机构”的功能布局，即：以滨海一中关村科技园为核心，以滨海新区内的国际生物医药联合研究院、开发区、保税区、高新区等 4
+                个留学人员创业园为支撑，以若干个滨海新区引才引智海外协作机构为保障，科学定位，统筹规划，分工负责，协同推进。
+            </p>
+            <div class="s3-img-wrap">
+                <!-- 左 -->
+                <div class="s3-i-item1">
+                    <!-- 天津国际生物医药联合研究所 -->
+                    <div class="wrapper">
+                        <div class="item">
+                            <img src="../image/about-lan.png" alt="">
+                            <span>
+                                天津国际生物医药联合研究院
+                            </span>
+                            <p>
+                                天津国际生物医药联合研究院作为创新园的核心和标志，由天津市政府投资11亿元率先启动建设，坐落于天津经济技术开发区洞庭路220号，规划建筑面积35万平方米，一期工程大楼已于2009年6月投入使用。
+                            </p>
+                        </div>
+                        <div class="img-wrapper">
+                            <img src="../image/about-s4-1.png" alt="">
+                            <span>
+                                天津国际生物医药联合研究院
+                            </span>
+                            <img src="../image/about-guoji.png" alt="">
+                        </div>
+                    </div>
+                    <!-- 高新区留学人员创业园 -->
+                    <div class="wrapper">
+                        <div class="item">
+                            <img src="../image/about-lan.png" alt="">
+                            <span>
+                                高新区留学人员创业园
+                            </span>
+                            <p>天创业园累计孵化留学生企业近200家，为高新区输送了一大批优秀的创新型企业。在反映孵化器孵化能力和孵化业绩的每万平米孵化面积所完成的在孵企业总产值，以及毕业企业数等主要孵化指标完成情况名列国家级孵化器前列。
+                            </p>
+                        </div>
+                        <div class="img-wrapper">
+                            <img src="../image/about-s4-1.png" alt="">
+                            <span>
+                                高新区留学人员创业园
+                            </span>
+                            <img src="../image/about-gaoxin.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <!-- 中 -->
+                <div class="s3-i-item2">
+                    <img src="../image/about-s4-zhong.png" alt="">
+                </div>
+                <!-- 右 -->
+                
+                <div class="s3-i-item1">
+                    <!-- 保税区留学人员创业园 -->
+                    <div class="wrapper">
+                        <div class="item">
+                            <img src="../image/about-lan.png" alt="">
+                            <span>保税区留学人员创业园</span>
+                            <p>保税区以保税为特色，临港为依托，形成了国际贸易、现代物流和出口加工三大主导产业。区内综合配套齐全，商业、服务业云集，产业链、供应链密集，以此成为全市对外开放的重要窗口和新的经济增长点。
+                            </p>
+                        </div>
+                        <div class="img-wrapper">
+                            <img src="../image/about-s4-1.png" alt="">
+                            <span>保税区留学人员创业园</span>
+                            <img src="../image/about-baoshui.png" alt="">
+                        </div>
+                    </div>
+                    <!-- 天津经济技术开发区留学生创业园 -->
+                    <div class="wrapper">
+                        <div class="item">
+                            <img src="../image/about-lan.png" alt="">
+                            <span>
+                                天津经济技术开发区留学生创业园 
+                            </span>
+                            <p>天津经济技术开发区留学生创业园成立于1996年7月，坐落在天津经济技术开发区第五大街与泰华路交口处，交通便利，基础设施完善。留学生创业园利用各项优惠政策，通过各种服务，吸引海外留学人员来津创业。
+                            </p>
+                        </div>
+                        <div class="img-wrapper">
+                            <img src="../image/about-s4-1.png" alt="">
+                            <span>
+                                天津经济技术开发区留学生创业园 
+                            </span>
+                            <img src="../image/about-jingji.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 一核四园 结束 -->
+
+    <!-- 服务平台 开始 -->
+    <a id="fwpt-maodian"></a>
+    <div class="section4">
+        <img src="../image/about.s5-1.jpg" alt="">
+        <div class="section4-wrap clfix">
+            <div class=" c-title-en">
+                <span>SERVICE PLATFORM</span>
+            </div>
+            <div class="c-title-ch">
+                <span>服务平台</span>
+            </div>
+            <p>
+                基地运用更加高效的方式，不断促进创新资源转化。以众包模式对接政采平台，为企业导入政采业务资源，以业务流量带动企业成长；围绕创新技术与人才，构建人力资源、金融服务、技术转化、管理咨询四大服务平台。全方位保障创新技术的商业化和产业化，形成创业生态圈；建设多个共享功能平台，构建新颖的交流、协作模式，推动创业者之间、团队与技术之间、技术与资本之间的互联互通，促进融合发展，助力成功。
+            </p>
+            <div class="s4-img-wrap">
+                <div class="s4-i-item">
+                    <div class="s4-i-iwrap">
+                        <i class="fa fa-users fa-5x"></i>
+                    </div>
+                    <div class="s4-i-swrap">
+                        <span>咨询管理</span>
+                    </div>
+                </div>
+                <div class="s4-i-item">
+                    <div class="s4-i-iwrap">
+                        <i class="fa fa-handshake-o fa-5x"></i>
+                    </div>
+                    <div class="s4-i-swrap">
+                        <span>技术转化</span>
+                    </div>
+                </div>
+                <div class="s4-i-item">
+                    <div class="s4-i-iwrap">
+                        <i class="fa fa-tv fa-5x"></i>
+                    </div>
+                    <div class="s4-i-swrap">
+                        <span>融资中介</span>
+                    </div>
+                </div>
+                <div class="s4-i-item">
+                    <div class="s4-i-iwrap">
+                        <i class="fa fa-refresh fa-5x"></i>
+                    </div>
+                    <div class="s4-i-swrap">
+                        <span>人力资源</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- 服务平台 结束 -->
+
+    <!------------ 主体 结束 ------------>
+
+    <!--------------------- footer begin ------------------------->
+    <div class="footer clfix">
+        <div class="footer-wrap ">
+
+            <div class="f-img">
+                <img src="../image/footer-logo.png" alt="">
+            </div>
+
+            <div class="f-text">
+                <p>天津（滨海）海外人才离岸创新创业基地</p>
+                <p>固话：+86-22-25231239 +86-22-25230519</p>
+                <p>地址：天津滨海-中关村科技园华塘睿城一区3号楼写字楼</p>
+            </div>
+
+            <div class="f-list-wrap">
+                <div class="f-list">
+                    <ul>
+                        <li><a href="./about.html">关于我们</a></li>
+                        <li><a href="#jdgk-maodian">基地概况</a></li>
+                        <li><a href="#hjzs-maodian">环境展示</a></li>
+                        <li><a href="#yhsy-maodian">一核四园</a></li>
+                        <li><a href="#fwpt-maodian">服务平台</a></li>
+                    </ul>
+                </div>
+                <div class="f-list">
+                    <ul>
+                        <li><a href="./service.html">双创服务</a></li>
+                        <li><a href="./service.html#cdfw-maodian">场地服务</a></li>
+                        <li><a href="./service.html#sbfw-maodian">申报服务</a></li>
+                        <li><a href="./service.html#jsfw-maodian">技术服务</a></li>
+                        <li><a href="./service.html#fhfw-maodian">孵化服务</a></li>
+                        <li><a href="./service.html#rcfw-maodian">人才服务</a></li>
+                    </ul>
+                </div>
+                <div class="f-list">
+                    <ul>
+                        <li><a href="./policy.html">政策服务</a></li>
+                        <li><a href="./policy.html#fgzc-maodian">非公职称</a></li>
+                        <li><a href="#">申报</a></li>
+
+                    </ul>
+                </div>
+                <div class="f-list">
+                    <ul>
+                        <li><a href="./news.html">咨询发布</a></li>
+                        <li><a href="./news.html#jdzx-maodian">基地咨询</a></li>
+                        <li><a href="./news.html#hdxw-maodian">活动新闻</a></li>
+                        <li><a href="./news.html#gsgg-maodian">公示公告</a></li>
+                    </ul>
+                </div>
+
+
+            </div>
+
+            <div class="f-img2-wrap">
+                <div class="f-img2">
+                    <img src="../image/footer1.png" alt="">
+                    <span>微博公众号</span>
+                </div>
+                <div class="f-img2">
+                    <img src="../image/footer2.jpg" alt="">
+                    <span>微信公众号</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <span>2021.6.1&nbsp;&nbsp;Lilihao</span>
+    </div>
+    <!--------------------- footer end --------------------------->
+    <script src="../js/login.js"></script>
+    <script src="../js/register.js"></script>
+</body>
+
+</html>

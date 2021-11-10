@@ -1,0 +1,31 @@
+#login {
+    width: 300px;
+    height: 200px;
+    background-color: gray;
+    z-index: 999;
+
+    position: fixed;
+    margin: auto;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+
+    display: none;
+}
+#login div:nth-of-type(1){
+    float: right;
+    
+}
+#login div:nth-of-type(2){
+   margin-left: 50px;
+   margin-top: 50px;
+}
+#login div:nth-of-type(3){
+    margin-left: 50px;
+    margin-top: 10px;
+ }
+ #login div:nth-of-type(4){
+    text-align: center;
+    margin-top: 30px;
+ }
